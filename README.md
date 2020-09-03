@@ -4,35 +4,53 @@ A demo Azure DevOps web extension.
 
 Creating a Web Extension (quick steps):
 ---------------------------------------
-*Create an Organization
-*Install Node
-*Install extension packaging tool (TFX):
-   npm install -g tfx-cli
-*Initialize new NPM package manifest:
-   npm init -y
-*Install the Microsoft VSS Web Extension SDK package:
-   npm install vss-web-extension-sdk --save
-   (This SDK includes a JavaScript library that provides APIs required for communicating with the page your extension is embedded in.)
-*Create an extension manifest file (i.e. => vss-extension.json) at extension root dir
-*Create a view at extension root dir (i.e. => my-hub.html)
+1. Create an Organization
 
-*Create a publisher in Visual Studio Marketplace Management Portal:
+2. Install Node
+
+3. Install extension packaging tool (TFX):
+
+   npm install -g tfx-cli
+
+4. Initialize new NPM package manifest:
+
+   npm init -y
+
+5. Install the Microsoft VSS Web Extension SDK package:
+
+   npm install vss-web-extension-sdk --save
+   
+   (This SDK includes a JavaScript library that provides APIs required for communicating with the page your extension is embedded in.)
+
+6. Create an extension manifest file (i.e. => vss-extension.json) at extension root dir
+
+7. Create a view at extension root dir (i.e. => my-hub.html)
+
+8. Create a publisher in Visual Studio Marketplace Management Portal:
+
    https://marketplace.visualstudio.com/manage/publishers/markhawkes
    
-*My First Extension:
+   My First Extension:
+   
    https://marketplace.visualstudio.com/items?itemName=MarkHawkes.my-first-extension
    
-*Note your ID for the manifest file of extension (i.e. => MarkHawkes)
-*Set the publisher in your manifest file (i.e. => MarkHawkes)
-*Run the TFX tool's packaging command from your extension directory:
-   tfx extension create
-*Upload your newly created .vsix file in the management portal (new extension)
-*Share with your organization
-*View your extension in the marketplace and install it to your organization
-*Select Organization settings, and then select Extensions to see your new extension:
-   (Look for the "... More Actions" top-leftish menu)
-   
-   
+9. Note your ID for the manifest file of extension (i.e. => MarkHawkes)
+
+10. Set the publisher in your manifest file (i.e. => MarkHawkes)
+
+11. Run the TFX tool's packaging command from your extension directory:
+
+    tfx extension create
+
+12. Upload your newly created .vsix file in the management portal (new extension)
+
+13. Share with your organization
+
+14. View your extension in the marketplace and install it to your organization
+
+15. Select Organization settings, and then select Extensions to see your new extension (Look for the "... More Actions" top-leftish menu)
+
+
 Extension Building Checklist (from docs):
 -----------------------------------------
 1. Familiarize yourself with this article and the extension types already available within the Marketplace
